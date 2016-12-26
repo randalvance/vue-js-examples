@@ -3,12 +3,6 @@ var data = {
         greeting: ''
     };
 
-var methods = {
-        greet: function() {
-            this.greeting = `Hello ${this.name}!`;
-        }
-    };
-
 var ButtonComponent = Vue.extend({
     data: function() {
         return data;
