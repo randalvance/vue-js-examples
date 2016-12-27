@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Raw HTML</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <div id="app" class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <h1>Example Only. Do not do this in real life!</h1>
+                <textarea class="form-control" rows="5" v-model="rawHtml"></textarea>
+            </div>
+        </div>
+        <h2>Result</h2>
+        <div class="row">
+            <!-- Use v-html directive -->
+            <div v-html="rawHtml" class="col-md-10">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                rawHtml: ''
+            }
+        })
+    </script>
+</body>
+
+</html>
