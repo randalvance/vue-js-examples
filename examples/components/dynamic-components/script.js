@@ -2,6 +2,7 @@ Vue.component('main-component', {
     template: `
         <div>
             <navigation v-on:buttonClicked="buttonClicked"></navigation>
+            <!-- Wrap component element with keep-alive element so that dynamic components retain their state even when replaced -->
             <component v-bind:is="currentView">
 
             </component>
