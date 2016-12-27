@@ -15,13 +15,22 @@
                 <h1>Components - Slots</h1>
 
                 <my-component>
-                    <span slot="header">Hello World</span>
+                    <span slot="header">Slots Demo</span>
 
                     <p>Content from parent.</p>
                     <p>More Content.</p>
 
                     <span slot="footer">&copy; 2016</span>
                 </my-component>
+
+
+                <h2>Scoped Slots Demo</h2>
+                <my-awesome-list :items="items">
+                    <template slot="item" scope="props">
+                        <!-- You can now give a custom template different from the default -->
+                        <li class="my-fancy-item"><b>{{ props.text }}</b></li>
+                    </template>
+                </my-awesome-list>
             </div>
         </div>
     </div>

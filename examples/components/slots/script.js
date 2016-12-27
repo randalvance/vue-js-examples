@@ -18,6 +18,20 @@ Vue.component('my-component', {
     `
 });
 
+Vue.component('my-awesome-list', {
+    props: ['items'],
+    template: `
+        <ul>
+            <slot name="item" v-for="item in items" :text="item">
+                <li>{{item}}</li> <!-- Defualt -->
+            </slot>
+        </ul>
+    `
+});
+
 new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        items: [ 'Apple', 'Orange', 'Grapes' ]
+    }
 });
