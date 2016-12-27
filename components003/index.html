@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Components - Properties</title>
+    <title>Components - Dynamic Binding Properties</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 
@@ -12,10 +12,9 @@
     <div id="app" class="container">
         <div class="row">
             <div class="col-md-8">
-                <h1>Components - Properties</h1>
-                <!-- notice kebab-case for camelCase properties -->
-                <my-component message="Hello World" sub-title="The world greets you back!">
-                <!-- also use v-bind or : if you are passing javascript expressions. For example :message="'Hello ' + 'World'" -->
+                <h1>Components - Dynamic Binding Properties</h1>
+                
+                <parent-component></parent-component>
             </div>
         </div>
     </div>
