@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Components - Events</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <div id="app" class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Components - Events</h1>
+
+                <div>
+                    <p>{{total}}</p>
+                    <button-counter v-on:increment="incrementTotal" :val="1"></button-counter>
+                    <button-counter v-on:increment="incrementTotal" :val="2"></button-counter>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

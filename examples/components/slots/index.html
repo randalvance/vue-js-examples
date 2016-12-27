@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Components - Slots</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <div id="app" class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Components - Slots</h1>
+
+                <my-component>
+                    <span slot="header">Hello World</span>
+
+                    <p>Content from parent.</p>
+                    <p>More Content.</p>
+
+                    <span slot="footer">&copy; 2016</span>
+                </my-component>
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/vue/dist/vue.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
